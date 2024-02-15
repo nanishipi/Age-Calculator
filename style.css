@@ -1,0 +1,179 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: hsl(0, 0%, 86%);
+    font-family: Poppins;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(259, 100%, 65%);
+}
+
+.age-calculator-container {
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    width: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    border-radius: 3rem 3rem 20rem 3rem;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* Chrome, Safari, Opera */
+    margin: 0;
+}
+
+.invalid-input {
+    display: none;
+    color: red;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+}
+
+.date-input {
+    color: hsl(0, 0%, 8%);
+    border: .1rem solid hsl(0, 0%, 86%);
+    border-radius: 1rem;
+    border-color: initial;
+    padding: 1.2rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    width: 11rem;
+    margin-right: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.date-input:focus {
+    border-color: hsl(259, 100%, 65%);
+}
+
+.submit-button {
+    background-image: url("./assets/images/icon-arrow.svg");
+    background-color: hsl(259, 100%, 65%);
+    color: white;
+    position: absolute;
+    left: 80%;
+    top: 28%;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: hsl(0, 0%, 8%);
+    transition: all .8s;
+}
+
+.row {
+    display: flex;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin-bottom: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.solid {
+    border-top: .1rem solid hsl(0, 0%, 86%);
+    width: 90%;
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 800i;
+}
+
+.result-number {
+    color: hsl(259, 100%, 65%);
+    font-size: 7.2rem;
+    font-weight: 800i;
+}
+
+/* Utility Classes */
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 5rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 1rem;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: .8rem;
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+
+    .age-calculator-container {
+        width: 85vw;
+        height: 65vh;
+        padding: 2.5rem;
+    }
+
+    .date-input {
+        width: 8.5rem;
+        margin-right: 3rem;
+    }
+    
+    .submit-button {
+        left: 40vw;
+        top: 24%;
+    }
+
+    .solid {
+        width: 100%;
+    }
+
+    .age-calculator-result {
+        margin-top: 3rem;
+    }
+}

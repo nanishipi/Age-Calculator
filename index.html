@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <h1></h1>
+    <main>
+      <div class="age-calculator-container">
+        <div class="u-margin-bottom-medium">
+          <div class="age-calculator-input">
+            <form>
+              <div class="u-margin-bottom-big row">
+                <div class="form-group">
+                  <label for="day-input">DAY</label>
+                  <input
+                    id="day-input"
+                    class="date-input"
+                    type="number"
+                    min="0"
+                    max="31"
+                    placeholder="DD"
+                  />
+                  <span class="invalid-input">Must be a valid Day</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="day-input">MONTH</label>
+                  <input
+                    id="month-input"
+                    class="date-input"
+                    type="number"
+                    min="0"
+                    max="12"
+                    placeholder="MM"
+                  />
+                  <span class="invalid-input">Must be a valid Month</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="day-input">YEAR</label>
+                  <input
+                    id="year-input"
+                    class="date-input"
+                    type="number"
+                    min="0"
+                    placeholder="YYYY"
+                  />
+                  <span class="invalid-input">Must be in the Past</span>
+                </div>
+              </div>
+
+              <button id="submit-button" class="submit-button" type="submit"></button>
+              <hr class="solid" />
+            </form>
+          </div>
+        </div>
+        <div class="age-calculator-result">
+          <h2><span id="years-result" class="result-number">--</span> years</h2>
+          <h2><span id="months-result" class="result-number">--</span> months</h2>
+          <h2><span id="days-result" class="result-number">--</span> days</h2>
+        </div>
+      </div>
+    </main>
+    <header>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/nanishipi">Nanishipi</a>.
+      </div>
+    </header>
+  </body>
+</html>
+<script src="index.js"></script>
